@@ -1,0 +1,45 @@
+.section_6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 80px;
+    width: 100%;
+    background: #F1F5F9;
+}
+
+
+.grid_6{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1440px;
+    min-width: 1440px;
+
+}
+
+
+
+.center_component_l_6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.center_component_r_6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+
+
+
+
