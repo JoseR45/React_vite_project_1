@@ -1,22 +1,10 @@
 import { Card, Flex, Grid, Heading } from "@chakra-ui/react"
 import './section_6.1.css'
-import { useEffect, useState } from "react"
+import { useTargetInfo } from "@/custom_hooks/use_target_info"
 
-type Publich = {
-    userId: string;
-    id: string;
-    title: string;
-    body: string;
-  };
 
-export default function Section61(){
-    const [data, setData] = useState<Publich[]>([])
-    useEffect(()=>{
-        fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((data_) => data_.json())
-        .then((data_json) => setData(data_json))
-    },[])
-
+export default function Comments(){
+    const data = useTargetInfo()
     return(
         <Flex height={'735px'} width={'100%'} className="section_61">
             <Heading  className="title_3">
