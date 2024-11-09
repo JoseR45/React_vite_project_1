@@ -1,7 +1,5 @@
 import { Flex, Grid, Heading } from "@chakra-ui/react"
-
 import CustomImage from "../image/image"
-import {SECTIONS} from "../../variables/variables"
 import './section_2.css'
 import img1 from '../../assets/images/logos_1/Logo-colored.svg'
 import img2 from '../../assets/images/logos_1/Logo-colored-1.svg'
@@ -17,7 +15,7 @@ import img25 from '../../assets/images/logos_2/Logo-colored-4.svg'
 export default function Section2(){
 
     return(
-        <Flex height={'479px'} width={'100%'} className="section_2" backgroundImage={SECTIONS[7]['img_2']}>
+        <Flex height={'479px'} width={'100%'} className="section_2">
             <Grid className="grid_2" templateColumns="repeat(1, 1fr)" gap="6">
                 <Flex className="flex_2">
                     <Heading  className="title_2">
